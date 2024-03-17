@@ -20,7 +20,18 @@ body {
     background-color: var(--almost-white);
 }
 
-.header-mobile {
+body.menu-open::before {
+    content: "";
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 26, 0.5);
+    top: 0;
+    left: 0;
+    
+}
+
+.header-mobile {content: "sou um pseudo elemnto";
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,6 +41,20 @@ body {
 .header-mobile button {
     border: none;
     background: none;
+    width: fit-content;
+}
+
+.header-mobile nav {
+    position: fixed;
+    background-color: var(--almost-white);
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 16rem;
+    z-index:999;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .primeira-secao {
